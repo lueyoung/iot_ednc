@@ -1,0 +1,24 @@
+iot_ednc/
+├── __init__.py
+├── framework/
+│   ├── __init__.py
+│   ├── simulation.py      # Main simulation framework
+│   ├── entities.py        # Device and fog node definitions
+│   └── metrics.py         # Performance metrics calculations
+├── algorithms/
+│   ├── __init__.py
+│   ├── base.py            # Algorithm interface
+│   ├── default.py         # Default implementation
+│   └── ednc/
+│       ├── __init__.py
+│       ├── algorithm.py   # Main EDNCAlgorithm class
+│       ├── entropy.py     # Entropy estimation & prediction
+│       ├── coding.py      # Coding parameter optimization
+│       ├── scheduling.py  # HE-RL scheduling
+│       └── feedback.py    # Feedback processing
+├── utils/
+│   ├── __init__.py
+│   ├── data_generator.py  # IoT data generation
+│   └── visualization.py   # Result visualization tools
+└── examples/
+    └── run_simulation.py  # Example script
